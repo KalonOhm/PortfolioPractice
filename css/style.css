@@ -36,6 +36,10 @@
 
 /* Generaal Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--clr-light);
   font-family: var(--ff-primary);
@@ -190,9 +194,28 @@ h3 {
   z-index: 1000;
 }
 
-.nav-open {
-  background: red;
+.nav-open .nav {
+  transform: translateX(0);
 }
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(-90deg) translatex(.5em);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+
+
 
 .hamburger {
   display: block;
@@ -202,7 +225,7 @@ h3 {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-dark);
+  background: var(--clr-accent);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -297,6 +320,7 @@ h3 {
 
 .service {
   max-width: 500px;
+  margin: 0 auto;
 }
 
 @media (min-width: 800px) {
@@ -427,4 +451,18 @@ h3 {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+/* portfolio item individual */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
