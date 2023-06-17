@@ -182,12 +182,26 @@ h3 {
   text-decoration: none;
 }
 
+.nav__link::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 2px;
+  margin: 0 auto;
+  background: var(--clr-accent);
+  opacity: 0.75;
+}
+
 .nav__link:hover {
   color: var(--clr-accent);
 }
 
+.nav__link:hover::after {
+  background: var(--clr-light);
+}
+
 .nav-toggle {
-  padding: .5em;
+  padding: 0.5em;
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -206,23 +220,21 @@ h3 {
 }
 
 .nav-open .hamburger {
-  transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
-  transform: rotate(-90deg) translatex(.5em);
+  transform: rotate(-90deg) translatex(0.5em);
 }
 
 .nav-open .hamburger::after {
   opacity: 0;
 }
 
-
-
-
 .hamburger {
   display: block;
   position: relative;
+  margin: .75em 0;
 }
 
 .hamburger,
@@ -301,7 +313,7 @@ h3 {
   background-color: var(--clr-dark);
   background-image: url(#);
   background-size: cover;
-  /* background-blend-modee: multiply; */
+  background-blend-mode: multiply;
   color: var(--clr-light);
   text-align: center;
 }
@@ -315,26 +327,37 @@ h3 {
   content: "";
   display: block;
   width: 2em;
-  height: 1px;
+  height: 2px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
+  background: var(--clr-accent);
   opacity: 0.55;
 }
 
 .service {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 1em;
+}
+
+.service h3::after {
+  content: "";
+  display: block;
+  width: 4em;
+  height: 2px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-accent);
+  opacity: 0.55;
 }
 
 @media (min-width: 800px) {
   .services {
     display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto 1em;
   }
 
-  .service + .service {
-    margin-left: 2em;
+  .service {
+    margin: 0 1em;
+    width: 33%;
   }
 }
 
@@ -409,8 +432,11 @@ h3 {
 
 .school {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   font-family: var(--ff-secondary);
+  border: thick double var(--clr-dark);
+  padding: 2em 1em 0;
+  background-color: var(--clr-light);
 }
 
 .school__info {
@@ -425,7 +451,7 @@ h3 {
   width: 8em;
   height: 2px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
+  background: var(--clr-accent);
   opacity: 0.75;
 }
 
@@ -481,16 +507,18 @@ h3 {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
-  font-size: var(--fs-h3);
 }
 
 .footer a {
   color: inherit;
   text-decoration: none;
+  font-size: var(--fs-h3);
 }
 
 .footer__link {
-  font-weight: var(--fw-bold);
+  /* font-weight: var(--fw-bold); */
+  font-family: var(--ff-secondary);
+  color: var(--clr-light);
 }
 
 .footer__link:hoover,
@@ -502,11 +530,17 @@ h3 {
   text-decoration: underline;
 }
 
+.footer__text {
+  /* font-weight: var(--fw-bold); */
+  font-family: var(--ff-secondary);
+  color: var(--clr-light);
+}
+
 .social-list {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 2em 0 1em;
   padding: 0;
 }
 
@@ -529,5 +563,4 @@ h3 {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-
 }
