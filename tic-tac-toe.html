@@ -34,21 +34,23 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">Skills</a>
+            <a href="index.html#home" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="index.html#services" class="nav__link">Skills</a>
           </li>
           <li class="nav__item">
-            <a href="#education" class="nav__link">Education</a>
+            <a href="index.html#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">Projects</a>
+            <a href="index.html#education" class="nav__link">Education</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="index.html#work" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#contact" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -57,42 +59,38 @@
     <!-- Item -->
     <section class="intro">
       <h1 class="section__title section__title--intro">
-        The title of <strong>My Project</strong>
+        Simply<strong>Tic-Tac-Toe</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        A short subtitle
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-github"></i>
       </p>
       <img
-        src="img/orange.jpg"
+        src="img/tictactoe.PNG"
         alt="a picture of my project"
         class="intro__img"
       />
     </section>
 
-    <div class="portfolio-item-individual">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <img src="" alt="project dashboard">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <section class="portfolio-item-individual">
+      <p>
+        This was an early project I did in the Promineo Tech course to practice my HTML, CSS, and JS skills. It is a simple Tic-Tac-Toe game that allows two players to play against each other. It was a fun project to work on and I learned a lot about how to use JS to manipulate the DOM.
+      </p>
+      <img src="img/tictactoe.PNG" alt="project dashboard" />
+      <div class="portfolio-item-individual__link">
+        <a href="https://github.com/KalonOhm/TicTacToe" target="_blank">View on Github 
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p>
+        There is a heading that displays who's taking their turn, and a button to reset the game. The game will also display a message if there is a winner or if the game is a tie. The game will not allow a player to select a square that has already been selected. There is an extra X in this screenshot, as whoever wins remains the active player, and can technically select additional squares. I could have added a check to prevent further selections if the game was over, but I didn't think it was necessary for this project, as players would likely just reset the board to play again. 
+      </p>
+      <p>
+        The tic-tac-toe hash is not in the HTML, but is created with JS. The game is played by clicking on the squares, which are divs with a class of "cell" and ids 0-8. The JS code listens for a click on a square, and then adds an X or O to the square, depending on which player is active. The JS code also checks for a winner after each turn, and displays a message if there is a winner or a tie. A winner is determined based on matching combinations of ids that could be a winning arrangement, compared with the current board state. The JS code also changes the active player after each turn, and prevents a player from selecting a square that has already been selected.
+      </p>
+    </section>
 
     <!-- Contact Me -->
     <footer class="footer" id="contact">

@@ -34,21 +34,23 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">Skills</a>
+            <a href="index.html#home" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="index.html#services" class="nav__link">Skills</a>
           </li>
           <li class="nav__item">
-            <a href="#education" class="nav__link">Education</a>
+            <a href="index.html#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">Projects</a>
+            <a href="index.html#education" class="nav__link">Education</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="index.html#work" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#contact" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -57,10 +59,16 @@
     <!-- Item -->
     <section class="intro">
       <h1 class="section__title section__title--intro">
-        The title of <strong>My Project</strong>
+        CI/CD Pipeline<strong>Dashboard</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        A short subtitle
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-vuejs"></i>
+        <i class="fa-brands fa-node"></i>
+        <i class="fa-brands fa-node-js"></i>
+        <i class="fa-brands fa-bitbucket"></i>
       </p>
       <img
         src="img/orange.jpg"
@@ -69,30 +77,26 @@
       />
     </section>
 
-    <div class="portfolio-item-individual">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <img src="" alt="project dashboard">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <section class="portfolio-item-individual">
+      <p>
+        This was the capstone project for my time at Codefi. It was a group project that I worked on with 3 other students over the course of our final month. We were tasked with creating a dashboard that would display the status of CI/CD pipelines for a local start-up, <a href="https://www.linkedin.com/company/warehq-labs/">WareHQ Labs</a>. We were given a list of requirements and data with which to test multiple outputs to the dashboard.
+      </p>
+      <p> 
+        Our requirements included several new-to-us technologies, namely Vue.js for the front end and Node.js/Express.js for the back end. We were also required to use Bitbucket for version control, when we were used to GitHub. In addition, we utilized MongoDB for a intermediary database, which was also new to me. 
+      </p>
+      <img src="img/ReactReading.PNG" alt="project dashboard" />
+      <div class="portfolio-item-individual__link">
+        <a href="https://github.com/KalonOhm/crud-more-time" target="_blank">View on Github 
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p>
+        My main contribution to the project was setting up the authorization and authentication, for which the client suggested that we use Auth0. I made sure users couldn't access the site without being logged in, and set up additional authorization checks on the back end so that the dashboard would only display data if the user was logged in with a valid and unexpired access token.
+      </p>
+      <p>
+        Another contribution involved identifying a method to recognize when a pipeline step was in progress, so that we could display a loading animation. The data would only show a result of "success"or "failure", or "stopped" if it was manually cancelled before completion. If the step was still in progress or waiting for earlier steps, it would show "undefined", even for steps that needed a manual start. We didn't want pending steps to show the loading animation, only the current step if in progress. I was able to identify a method to check if the step had a start time, but no end time, and only display the loading animation if this was the case.  
+      </p>
+    </section>
 
     <!-- Contact Me -->
     <footer class="footer" id="contact">

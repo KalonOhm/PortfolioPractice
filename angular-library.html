@@ -34,22 +34,26 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Skills</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#education" class="nav__link">Education</a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#services" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#work" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
         </ul>
       </nav>
     </header>
@@ -57,42 +61,40 @@
     <!-- Item -->
     <section class="intro">
       <h1 class="section__title section__title--intro">
-        The title of <strong>My Project</strong>
+        Personal <strong>Bookshelf</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        A short subtitle
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-angular"></i>
+        <i class="fa-brands fa-bootstrap"></i>
+        <i class="fa-brands fa-github"></i>
       </p>
       <img
-        src="img/orange.jpg"
+        src="img/BookshelfLarge.PNG"
         alt="a picture of my project"
         class="intro__img"
       />
     </section>
 
-    <div class="portfolio-item-individual">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <img src="" alt="project dashboard">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <section class="portfolio-item-individual">
+      <p>
+        While the online lesson portion of the Angular course followed the recipe app tutorial, part of the class lessons involved using what we had learned, and transfering those skills to a build a similar project. Instead of recipes and shopping lists, I built a library app similar to my React reading list. This project was built using Angular and Bootsrap.
+      </p>
+      <img src="img/BookshelfLarge.PNG" alt="project dashboard" />
+      <div class="portfolio-item-individual__link">
+        <a href="https://github.com/KalonOhm/crud-more-time" target="_blank">View on Github 
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p>
+        It used many of the same types of components and services found in the recipe app, including authorization and connection to Firebase to save and fetch book lists for users. The app allows the user to search results from the OpenLibrary.org API and add those books to their personal bookshelf with one click.
+      </p>
+      <p>
+        There are several features that I did not get around to completing. The user was supposed to be able to sort their bookshelf by title or author. The Edit and Delete buttons were made redundant, as the book info was coming from an outside source, and could not be edited, nor deleted from Openlibrary. The blue "-" button will still remove books from the user's bookshelf. There are definite style improveements that could be had, as well as a more robust search function, or the ability to pull accurate book covers instead of using a placeholder image from PlaceKitten.com.
+      </p>
+    </section>
 
     <!-- Contact Me -->
     <footer class="footer" id="contact">

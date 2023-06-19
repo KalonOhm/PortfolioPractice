@@ -34,21 +34,23 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">Skills</a>
+            <a href="index.html#home" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="index.html#services" class="nav__link">Skills</a>
           </li>
           <li class="nav__item">
-            <a href="#education" class="nav__link">Education</a>
+            <a href="index.html#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">Projects</a>
+            <a href="index.html#education" class="nav__link">Education</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="index.html#work" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#contact" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -57,42 +59,36 @@
     <!-- Item -->
     <section class="intro">
       <h1 class="section__title section__title--intro">
-        The title of <strong>My Project</strong>
+        Warhammer 40k <strong>Tournament Roster</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        A short subtitle
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-bootstrap"></i>
+        <i class="fa-brands fa-github"></i>
       </p>
       <img
-        src="img/orange.jpg"
+        src="img/WH40roster.PNG"
         alt="a picture of my project"
         class="intro__img"
       />
     </section>
 
-    <div class="portfolio-item-individual">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <img src="" alt="project dashboard">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <section class="portfolio-item-individual">
+      <p>
+        This was another early project for Promineo Tech, where we were tasked with making a single page website with a Bootstrap-styled table representing our choice of data, with a similarly-styled form that allow a user to add a new row to the table when submitted. I had gotten into building and painting Warhammer 40k miniatures during the pandemic, so I decided to make my project a basic army roster for a hypothetical tournament.
+      </p>
+      <img src="img/WH40roster.PNG" alt="project dashboard" />
+      <div class="portfolio-item-individual__link">
+        <a href="https://github.com/KalonOhm/WH40K-Registry" target="_blank">View on Github 
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p>
+        I tried to make the learning process more fun by working on something that personally interested me, and more challenging by adding a few extra features. I added a dropdown menu to the form that would allow the user to select a faction from a list of options, and a primary detachment type, as well as a number form with arrows you could click or scroll through, along with adding constraints to the type of data several of the input fields would allow. The player first and last name fields would be combined on the roster list once a player submitted their information using the green button. You could then view specific information about each player in the list above the form. 
+      </p>
+    </section>
 
     <!-- Contact Me -->
     <footer class="footer" id="contact">

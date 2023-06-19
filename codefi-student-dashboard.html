@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <script src="https://kit.fontawesome.com/ae33528a15.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ae33528a15.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link
       rel="stylesheet"
@@ -34,21 +37,23 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">Skills</a>
+            <a href="index.html#home" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="index.html#services" class="nav__link">Skills</a>
           </li>
           <li class="nav__item">
-            <a href="#education" class="nav__link">Education</a>
+            <a href="index.html#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">Projects</a>
+            <a href="index.html#education" class="nav__link">Education</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="index.html#work" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#contact" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -57,10 +62,15 @@
     <!-- Item -->
     <section class="intro">
       <h1 class="section__title section__title--intro">
-        The title of <strong>My Project</strong>
+        Codefi Student<strong>Video Playlist</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        A short subtitle
+        <i class="fa-brands fa-html5"></i>
+        <i class="fa-brands fa-css3-alt"></i>
+        <i class="fa-brands fa-js"></i>
+        <i class="fa-brands fa-react"></i>
+        <i class="fa-brands fa-docker"></i>
+        <i class="fa-brands fa-github"></i>
       </p>
       <img
         src="img/orange.jpg"
@@ -69,30 +79,36 @@
       />
     </section>
 
-    <div class="portfolio-item-individual">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <img src="" alt="project dashboard">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <section class="portfolio-item-individual">
+      <p>
+        During my time at Codefi, I had the opportunity for a paid work
+        experience. I would be placed with one of several companies partnering
+        with Codefi to allow students to earn while we learn. My previous React
+        experience landed me with
+        <a href="https://www.linkedin.com/company/codeficonnects/">Codefi</a>
+        itself, working on the next version of the learning dashboard for
+        prospective students. This project used the Next.js framework, Tailwind
+        CSS, Prisma and Docker.
+      </p>
+      <img src="img/ReactReading.PNG" alt="project dashboard" />
+      <div class="portfolio-item-individual__link">
+        <a href="https://github.com/KalonOhm/crud-more-time" target="_blank"
+          >View on Github
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p>
+        This project was a great opportunity to learn more about React through
+        Next.js, and to work with a team of professional developers. I was
+        tasked with adding a video player and interactible playlist for students
+        to watch the lessons. I worked on the arrangement and styling of the
+        dashboard components, database queries, state management, and the
+        functionality of the "Next Video" button.
+      </p>
+      <p>
+        The paid work experience was a part-time commitment alongside keeping up to date with the class responsibilities, and lasted around 2 months. I was able to learn a lot about working with a team of developers, regular stand-ups, sprints, JIRA and how to work with a codebase that I didn't write myself. 
+      </p>
+    </section>
 
     <!-- Contact Me -->
     <footer class="footer" id="contact">
@@ -131,10 +147,11 @@
           <a href="" class="social-list__link"></a>
         </li> -->
       </ul>
-      <div class="footer__text">Copyright Kalon Ohmstede 2023 - All Rights Reserved</div>
+      <div class="footer__text">
+        Copyright Kalon Ohmstede 2023 - All Rights Reserved
+      </div>
     </footer>
 
     <script src="js/index.js"></script>
-
   </body>
 </html>
