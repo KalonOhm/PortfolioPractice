@@ -11,12 +11,14 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalise.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha384-M86HUGbBFILBBZ9ykMAbT3nVb0+2C7yZlF8X2CiKNpDOQjKroMJqIeGZ/Le8N2Qp"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0"
       crossorigin="anonymous"
     />
 
@@ -73,7 +75,7 @@
         <i class="fa-brands fa-github"></i>
       </p>
       <img
-        src="img/orange.jpg"
+        src="img/codefi-dashboard/codefi-2.jpg"
         alt="a picture of my project"
         class="intro__img"
       />
@@ -90,7 +92,50 @@
         prospective students. This project used the Next.js framework, Tailwind
         CSS, Prisma and Docker.
       </p>
-      <img src="img/ReactReading.PNG" alt="project dashboard" />
+      
+      
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img
+            src="img/codefi-dashboard/codefi-1.jpg"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img
+            src="img/codefi-dashboard/codefi-2.jpg"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img
+            src="img/codefi-dashboard/codefi-3.jpg"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img
+            src="img/codefi-dashboard/codefi-4.jpg"
+            style="width: 100%"
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      
       <div class="portfolio-item-individual__link">
         <a href="https://github.com/KalonOhm/crud-more-time" target="_blank"
           >View on Github

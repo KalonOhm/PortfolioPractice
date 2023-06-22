@@ -11,12 +11,14 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalise.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha384-M86HUGbBFILBBZ9ykMAbT3nVb0+2C7yZlF8X2CiKNpDOQjKroMJqIeGZ/Le8N2Qp"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0"
       crossorigin="anonymous"
     />
 
@@ -73,7 +75,7 @@
         <i class="fa-brands fa-github"></i>
       </p>
       <img
-        src="img/ReactReading.PNG"
+        src="img/crud-reading/localhost_3001_.png"
         alt="a picture of my project"
         class="intro__img"
       />
@@ -81,9 +83,126 @@
 
     <section class="portfolio-item-individual">
       <p>
-        This is a React CRUD application that allows the user to "create", "read", "update", and "delete" books from a reading list. It stores the book title, author, and genre. This project was created using React, React Router, and Bootstrap.
+        This is a React CRUD application that allows the user to "create",
+        "read", "update", and "delete" books from a reading list. It stores the
+        book title, author, and genre. This project was created using React,
+        React Router, and Bootstrap.
       </p>
-      <img src="img/ReactReading.PNG" alt="project dashboard" />
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_.png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (1).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (2).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (3).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (4).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (5).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (6).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (7).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (8).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">10 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (9).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">11 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (10).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">12 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (11).png"
+            style="width: 100%"
+          />
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">13 / 13</div>
+          <img
+            src="img/crud-reading/localhost_3001_ (12).png"
+            style="width: 100%"
+          />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+
+      </div>
+
       <div class="portfolio-item-individual__link">
         <a href="https://github.com/KalonOhm/crud-more-time" target="_blank"
           >View on Github
@@ -91,10 +210,19 @@
         </a>
       </div>
       <p>
-        You can edit any of the books in the list by clicking on the "Edit" button. This will take you to a form where you can edit the book's title, author, and genre. You can also delete any of the books in the list by clicking on the "Delete" button. The "View" button takes you to a page where I was thinking of adding a summary blurb, rating system, and review section for each book.
+        You can edit any of the books in the list by clicking on the "Edit"
+        button. This will take you to a form where you can edit the book's
+        title, author, and genre. You can also delete any of the books in the
+        list by clicking on the "Delete" button. The "View" button takes you to
+        a page where I was thinking of adding a summary blurb, rating system,
+        and review section for each book.
       </p>
       <p>
-        You can add a new book to the list by clicking on the "Add new recommendation" button. This will take you to a similar form where you can fill out title, author, and genre information for the new book. Once you save changes, it will redirect to the list, and the new book will be visible at the bottom.
+        You can add a new book to the list by clicking on the "Add new
+        recommendation" button. This will take you to a similar form where you
+        can fill out title, author, and genre information for the new book. Once
+        you save changes, it will redirect to the list, and the new book will be
+        visible at the bottom.
       </p>
     </section>
 
