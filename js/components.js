@@ -37,7 +37,7 @@ class PortfolioHeader extends HTMLElement {
 
 class PortfolioFooter extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = <footer class="footer" id="contact">
+    this.innerHTML = `<footer class="footer" id="contact">
       <h3 class="section__title section__title--contact"></h3>
       <a href="mailto:kalonohmstede@gmail.com" class="footer__link">
         kalonohmstede@gmail.com
@@ -59,7 +59,7 @@ class PortfolioFooter extends HTMLElement {
         </li>
       </ul>
       <div class="footer__text">Copyright Kalon Ohmstede 2023 - All Rights Reserved</div>
-    </footer>
+    </footer>`;
   }
 }
 
